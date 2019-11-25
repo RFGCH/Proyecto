@@ -1,0 +1,6 @@
+M513
+El molino 513, se ubica en la planta 1
+C134
+La chancadora 134, se ubica en la planta 3
+M123
+El molino 123, se ubica en la planta 2

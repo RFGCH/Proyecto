@@ -1,0 +1,85 @@
+# depslib dependency file v1.0
+1574639373 source:c:\users\rubén felix\documents\lenguajes\proyectofinal\main.cpp
+	<iostream>
+	<arr.h>
+	<GUI.h>
+	<fstream>
+	<vector>
+
+1574612952 source:c:\users\rubén felix\documents\lenguajes\proyectofinal\src\arr.cpp
+	"arr.h"
+	<iostream>
+
+1574642565 c:\users\rubén felix\documents\lenguajes\proyectofinal\include\arr.h
+	<iostream>
+	<Trabajador.h>
+	<Supervisor.h>
+	<Planner.h>
+
+1574614886 source:c:\users\rubén felix\documents\lenguajes\proyectofinal\src\persona.cpp
+	"Persona.h"
+	<iostream>
+
+1574615300 c:\users\rubén felix\documents\lenguajes\proyectofinal\include\persona.h
+	<iostream>
+
+1574639868 source:c:\users\rubén felix\documents\lenguajes\proyectofinal\src\trabajador.cpp
+	"Trabajador.h"
+	<iostream>
+
+1574639860 c:\users\rubén felix\documents\lenguajes\proyectofinal\include\trabajador.h
+	<Persona.h>
+	<iostream>
+
+1574606078 source:c:\users\rubén felix\documents\lenguajes\proyectofinal\src\supervisor.cpp
+	"Supervisor.h"
+	<iostream>
+
+1574606113 c:\users\rubén felix\documents\lenguajes\proyectofinal\include\supervisor.h
+	<iostream>
+	<Persona.h>
+
+1574606972 source:c:\users\rubén felix\documents\lenguajes\proyectofinal\src\planner.cpp
+	"Planner.h"
+	<iostream>
+
+1574606972 c:\users\rubén felix\documents\lenguajes\proyectofinal\include\planner.h
+	<iostream>
+	<Persona.h>
+
+1574612602 source:c:\users\rubén felix\documents\lenguajes\proyectofinal\src\gui.cpp
+	"GUI.h"
+	<cstdlib>
+	<iostream>
+	<fstream>
+	<IngresarGUI.h>
+
+1574611742 c:\users\rubén felix\documents\lenguajes\proyectofinal\include\gui.h
+	<iostream>
+
+1574610950 source:c:\users\rubén felix\documents\lenguajes\proyectofinal\src\maquinasgui.cpp
+	"MaquinasGUI.h"
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1574610923 c:\users\rubén felix\documents\lenguajes\proyectofinal\include\maquinasgui.h
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1574615409 source:c:\users\rubén felix\documents\lenguajes\proyectofinal\src\ingresargui.cpp
+	"IngresarGUI.h"
+	<cstdlib>
+	<iostream>
+	<fstream>
+	<MaquinasGUI.h>
+
+1574611433 c:\users\rubén felix\documents\lenguajes\proyectofinal\include\ingresargui.h
+	<iostream>
+
+1574612584 source:c:\users\rubén felix\documents\lenguajes\proyectofinal\src\maquina.cpp
+	"Maquina.h"
+
+1574612701 c:\users\rubén felix\documents\lenguajes\proyectofinal\include\maquina.h
+
