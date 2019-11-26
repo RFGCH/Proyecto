@@ -9,6 +9,7 @@ class Supervisor:public Persona
 {
     public:
         Supervisor(string,string);
+        void print();
 
 };
 
