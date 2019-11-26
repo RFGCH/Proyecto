@@ -85,8 +85,8 @@ int main()
 {
     CargarArr();
     OrdenarArr();
-    GUI A;
     DescargarArr();
+    GUI A;
     return 0;
 }
 
@@ -137,20 +137,11 @@ void quicksort(vector<T>arr,int maxi,int mini = 0){
         quicksort(arr,maxi,p+1);
     }
 }
-template <class T>
-void burbuja(vector<T>arr,int t){
-
-    for(int i=1;i<t;i++)
-        for(int j=0;j<t-i;j++)
-            if(arr[j]>arr[j+1])
-                swap(arr[j],arr[j+1]);
-
-}
 
 void OrdenarArr(){
-    burbuja(a1,a1.size()-1);
-    burbuja(a2,a2.size()-1);
-    burbuja(a3,a3.size()-1);
+    quicksort(a1,a1.size()-1);
+    quicksort(a2,a2.size()-1);
+    quicksort(a3,a3.size()-1);
 }
 void DescargarArr(){
     ifstream leer("Datos//users.txt");
@@ -158,7 +149,6 @@ void DescargarArr(){
     int tamTra=a1.size();
     int tamSup=a2.size();
     int tamPla=a3.size();
-    cout << tamPla << "  " << tamSup << "  " << tamTra << endl;
     while (tamPla--){
         registrar << a3[tamPla].getnombre()+"\n";
         registrar << "Planner\n";
