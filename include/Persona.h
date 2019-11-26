@@ -9,12 +9,17 @@ class Persona
     public:
 
         Persona(string,string);
+        Persona(const Persona&);
         string getnombre();
+        string getpasswo();
+        bool operator < (Persona a);
+        bool operator > (Persona a);
 
-    private:
+    protected:
 
         string nombre,password;
 
+    private:
 
 };
 

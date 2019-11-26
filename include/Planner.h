@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Planner:protected Persona
+class Planner:public Persona
 {
     public:
         Planner(string,string);

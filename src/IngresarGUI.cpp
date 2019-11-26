@@ -97,10 +97,12 @@ void IngresarGUI::Usuarios(){
     while(!leer.eof()){
         string registro;
         getline(leer,registro);
+        if(registro!=""){
         cout << "\n   Nombre: " << registro << endl;
         getline(leer,registro);
         cout << "   Puesto: " << registro << endl;
         getline(leer,registro);
+        }
     }
     string opc;
     cout << "\n Ingrese cualquier tecla... ";

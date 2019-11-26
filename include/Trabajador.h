@@ -11,7 +11,7 @@ class Trabajador:public Persona
         Trabajador(string,string);
         void print();
 
-        Trabajador operator < (Trabajador a);
+
 };
 
 #endif // TRABAJADOR_H

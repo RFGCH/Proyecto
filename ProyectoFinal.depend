@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1574639373 source:c:\users\rubén felix\documents\lenguajes\proyectofinal\main.cpp
+1574744445 source:c:\users\rubén felix\documents\lenguajes\proyectofinal\main.cpp
 	<iostream>
 	<arr.h>
 	<GUI.h>
@@ -16,18 +16,19 @@
 	<Supervisor.h>
 	<Planner.h>
 
-1574614886 source:c:\users\rubén felix\documents\lenguajes\proyectofinal\src\persona.cpp
+1574743584 source:c:\users\rubén felix\documents\lenguajes\proyectofinal\src\persona.cpp
 	"Persona.h"
+	<string>
 	<iostream>
 
-1574615300 c:\users\rubén felix\documents\lenguajes\proyectofinal\include\persona.h
+1574739525 c:\users\rubén felix\documents\lenguajes\proyectofinal\include\persona.h
 	<iostream>
 
-1574639868 source:c:\users\rubén felix\documents\lenguajes\proyectofinal\src\trabajador.cpp
+1574736364 source:c:\users\rubén felix\documents\lenguajes\proyectofinal\src\trabajador.cpp
 	"Trabajador.h"
 	<iostream>
 
-1574639860 c:\users\rubén felix\documents\lenguajes\proyectofinal\include\trabajador.h
+1574736393 c:\users\rubén felix\documents\lenguajes\proyectofinal\include\trabajador.h
 	<Persona.h>
 	<iostream>
 
@@ -35,7 +36,7 @@
 	"Supervisor.h"
 	<iostream>
 
-1574606113 c:\users\rubén felix\documents\lenguajes\proyectofinal\include\supervisor.h
+1574735997 c:\users\rubén felix\documents\lenguajes\proyectofinal\include\supervisor.h
 	<iostream>
 	<Persona.h>
 
@@ -43,7 +44,7 @@
 	"Planner.h"
 	<iostream>
 
-1574606972 c:\users\rubén felix\documents\lenguajes\proyectofinal\include\planner.h
+1574736393 c:\users\rubén felix\documents\lenguajes\proyectofinal\include\planner.h
 	<iostream>
 	<Persona.h>
 

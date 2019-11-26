@@ -5,6 +5,13 @@
 #include <vector>
 
 using namespace std;
+
+//Variables Globales
+    static vector <Trabajador> a1;
+    static vector <Supervisor> a2;
+    static vector <Planner> a3;
+
+
 /*
 class Maquina{
 
@@ -69,44 +76,26 @@ class Maquina{
     }
 };
 */
-template <class T>
-int particion(T arr[],int max,int min){
 
-    T p=arr[max];
-    int i=min-1;
+void CargarArr();
+void OrdenarArr();
+void DescargarArr();
 
-    for(int j=i+1;j<=max-1;j++)
-        if(*(arr+j)<p)
-            swap(*(++i+arr),*(arr+j));
-
-    swap(*(arr+i+1),*(arr+max));
-    return i+1;
-
-}
-template <class T>
-void quicksort(T arr[],int max,int min = 0){
-
-    if(min < max){
-        int p = particion(arr,max,min);
-        quicksort(arr,p-1,min);
-        quicksort(arr,max,p+1);
-    }
-
-}
 int main()
 {
-    ifstream leer("Datos//users.txt");
-    int tam;
-    while(!leer.eof()){
-        string registro;
-        getline(leer,registro);
-        tam++;
-    }
-    leer.close();
-    tam/=3;
-    vector <Trabajador> a1;
-    vector <Supervisor> a2;
-    vector <Planner> a3;
+    CargarArr();
+    OrdenarArr();
+    GUI A;
+    DescargarArr();
+    return 0;
+}
+
+
+/*Abre el archivo y carga los datos de todos
+los usuarios seleccionando por su funcion*/
+
+
+void CargarArr(){
     ifstream leer2("Datos//users.txt");
     while(!leer2.eof()){
         string nombre,pass,rango;
@@ -121,21 +110,73 @@ int main()
             Supervisor b(nombre,pass);
             a2.push_back(b);
         }
-        else{
+        else if(rango=="Planner"){
             Planner c(nombre,pass);
             a3.push_back(c);
         }
     }
-
-
-    quicksort <Trabajador> (a1*,a1.size());
-
     leer2.close();
+}
 
-    GUI A;
+//Funcion de ordenamiento
+template <class T>
+int particion(vector<T>arr,int maxi,int mini){
+    T aux = arr[maxi];
+    int i=mini-1;
+    for(int j=i+1;j<=maxi-1;j++)
+        if(arr[j]<aux)
+            swap(arr[++i],arr[j]);
+    swap(arr[i+1],arr[maxi]);
+    return i+1;
+}
+template <class T>
+void quicksort(vector<T>arr,int maxi,int mini = 0){
+    if(mini < maxi){
+        int p = particion(arr,maxi,mini);
+        quicksort(arr,p-1,mini);
+        quicksort(arr,maxi,p+1);
+    }
+}
+template <class T>
+void burbuja(vector<T>arr,int t){
 
+    for(int i=1;i<t;i++)
+        for(int j=0;j<t-i;j++)
+            if(arr[j]>arr[j+1])
+                swap(arr[j],arr[j+1]);
 
+}
 
+void OrdenarArr(){
+    burbuja(a1,a1.size()-1);
+    burbuja(a2,a2.size()-1);
+    burbuja(a3,a3.size()-1);
+}
+void DescargarArr(){
+    ifstream leer("Datos//users.txt");
+    ofstream registrar("Datos//codigofacilito.txt");
+    int tamTra=a1.size();
+    int tamSup=a2.size();
+    int tamPla=a3.size();
+    cout << tamPla << "  " << tamSup << "  " << tamTra << endl;
+    while (tamPla--){
+        registrar << a3[tamPla].getnombre()+"\n";
+        registrar << "Planner\n";
+        registrar << a3[tamPla].getpasswo()+"\n";
+    }
+    while (tamSup--){
+        registrar << a2[tamSup].getnombre()+"\n";
+        registrar << "Supervisor\n";
+        registrar << a2[tamSup].getpasswo()+"\n";
+    }
+    while (tamTra--){
+        registrar << a1[tamTra].getnombre()+"\n";
+        registrar << "Trabajador\n";
+        registrar << a1[tamTra].getpasswo()+"\n";
+    }
 
-    return 0;
+    leer.close();
+    registrar.close();
+    remove("Datos//users.txt");
+    rename("Datos//codigofacilito.txt","Datos//users.txt");
 }

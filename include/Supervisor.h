@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Supervisor:protected Persona
+class Supervisor:public Persona
 {
     public:
         Supervisor(string,string);
