@@ -5,9 +5,10 @@ Resumen
 La interfaz intenta ser lo más amigable con el usuario posible, esta consta de un menú, un ingreso, un registrarse, opciones , salir.
   Por el momento no se a podido implentar el sistema de pedidos especializdos de cada uno de los puestos.
 
-Intruducción
-
-  
+Introducción
+En un entorno laboral es neceasaria la precision y orden de datos de una plataforma mediatica, pero a menudo estas son demasiado complejas o tienen demasiadas funcionalidades que usuarios no necesitan.
+Mi objetivo es el que la persona que use el sistema sea capaz de sentirse comodo usando una plataforma sencilla con pocas funcionalidades o, más interezante, usar un sistema de especialidades donde no es necesario que una persona tenga que saber todas las funciones del sistema.
+Esto no seria posible si el sistema no implementara los rango o si los usuarios no supiesen que es lo que cada uno de ellos (o almenos su propio rango).
 
 Cuerpo:
   Menu:
