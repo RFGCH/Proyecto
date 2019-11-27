@@ -19,8 +19,8 @@ int main()
 {
     CargarArr();
     OrdenarArr();
-    DescargarArr();
     GUI A;
+    DescargarArr();
     return 0;
 }
 
@@ -77,6 +77,11 @@ void OrdenarArr(){
     quicksort(a2,a2.size()-1);
     quicksort(a3,a3.size()-1);
 }
+
+/* Descarga los datos de los arreglos en el orden de, Planners, Supervisor y 
+   Trabajadores */ 
+
+
 void DescargarArr(){
     ifstream leer("Datos//users.txt");
     ofstream registrar("Datos//codigofacilito.txt");
