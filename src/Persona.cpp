@@ -22,3 +22,6 @@ bool Persona::operator <(Persona a){
 bool Persona::operator >(Persona a){
     return (!nombre.compare(a.nombre));
 }
+void Persona :: print(){
+    cout << "Nombre: "  << nombre << endl;
+}

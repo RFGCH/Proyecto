@@ -25,6 +25,7 @@ class Persona
     protected:
 
         string nombre,password;
+        virtual void print();
 
     private:
 

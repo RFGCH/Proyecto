@@ -9,8 +9,8 @@ MaquinasGUI::MaquinasGUI(string nick):
         nick(nick)
 {
     bool run = true;
+    system("cls");
     while(run){
-        system("cls");
         string opc;
         cout << "\n ------  Maquinas  ------" << endl;
         cout << "\n   1.-Vista rapida" << endl;
@@ -19,6 +19,7 @@ MaquinasGUI::MaquinasGUI(string nick):
         cout << "\n   4.-Salir" << endl;
         cout << "\n   Ingrese su opcion: ";
         cin >> opc;
+        system("cls");
         if(opc == "1")
             Vistarapida();
         else if(opc == "2")
