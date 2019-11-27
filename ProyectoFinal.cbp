@@ -38,6 +38,7 @@
 		<Unit filename="include/IngresarGUI.h" />
 		<Unit filename="include/Maquina.h" />
 		<Unit filename="include/MaquinasGUI.h" />
+		<Unit filename="include/PerfilGUI.h" />
 		<Unit filename="include/Persona.h" />
 		<Unit filename="include/Planner.h" />
 		<Unit filename="include/Supervisor.h" />
@@ -48,6 +49,7 @@
 		<Unit filename="src/IngresarGUI.cpp" />
 		<Unit filename="src/Maquina.cpp" />
 		<Unit filename="src/MaquinasGUI.cpp" />
+		<Unit filename="src/PerfilGUI.cpp" />
 		<Unit filename="src/Persona.cpp" />
 		<Unit filename="src/Planner.cpp" />
 		<Unit filename="src/Supervisor.cpp" />

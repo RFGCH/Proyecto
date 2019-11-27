@@ -84,3 +84,107 @@
 
 1574612701 c:\users\rubén felix\documents\lenguajes\proyectofinal\include\maquina.h
 
+1574846684 source:c:\users\alumno-e\downloads\proyecto-master\main.cpp
+	<iostream>
+	<arr.h>
+	<GUI.h>
+	<fstream>
+	<vector>
+
+1574846684 c:\users\alumno-e\downloads\proyecto-master\include\arr.h
+	<iostream>
+	<Trabajador.h>
+	<Supervisor.h>
+	<Planner.h>
+
+1574863082 c:\users\alumno-e\downloads\proyecto-master\include\trabajador.h
+	<Persona.h>
+	<iostream>
+
+1574863278 c:\users\alumno-e\downloads\proyecto-master\include\persona.h
+	<iostream>
+
+1574846684 c:\users\alumno-e\downloads\proyecto-master\include\supervisor.h
+	<iostream>
+	<Persona.h>
+
+1574846684 c:\users\alumno-e\downloads\proyecto-master\include\planner.h
+	<iostream>
+	<Persona.h>
+
+1574846684 c:\users\alumno-e\downloads\proyecto-master\include\gui.h
+	<iostream>
+
+1574846684 source:c:\users\alumno-e\downloads\proyecto-master\src\arr.cpp
+	"arr.h"
+	<iostream>
+
+1574868972 source:c:\users\alumno-e\downloads\proyecto-master\src\gui.cpp
+	"GUI.h"
+	<cstdlib>
+	<iostream>
+	<fstream>
+	<IngresarGUI.h>
+
+1574863890 c:\users\alumno-e\downloads\proyecto-master\include\ingresargui.h
+	<iostream>
+
+1574864193 source:c:\users\alumno-e\downloads\proyecto-master\src\ingresargui.cpp
+	"IngresarGUI.h"
+	<cstdlib>
+	<iostream>
+	<fstream>
+	<MaquinasGUI.h>
+	<PerfilGUI.h>
+
+1574846684 c:\users\alumno-e\downloads\proyecto-master\include\maquinasgui.h
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1574846684 source:c:\users\alumno-e\downloads\proyecto-master\src\maquina.cpp
+	"Maquina.h"
+
+1574846684 c:\users\alumno-e\downloads\proyecto-master\include\maquina.h
+
+1574862942 source:c:\users\alumno-e\downloads\proyecto-master\src\maquinasgui.cpp
+	"MaquinasGUI.h"
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1574863278 source:c:\users\alumno-e\downloads\proyecto-master\src\persona.cpp
+	"Persona.h"
+	<string>
+	<iostream>
+
+1574846684 source:c:\users\alumno-e\downloads\proyecto-master\src\planner.cpp
+	"Planner.h"
+	<iostream>
+
+1574846684 source:c:\users\alumno-e\downloads\proyecto-master\src\supervisor.cpp
+	"Supervisor.h"
+	<iostream>
+
+1574846684 source:c:\users\alumno-e\downloads\proyecto-master\src\trabajador.cpp
+	"Trabajador.h"
+	<iostream>
+
+1574863995 source:c:\users\alumno-e\downloads\proyecto-master\src\perfil.cpp
+	"Perfil.h"
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1574863995 c:\users\alumno-e\downloads\proyecto-master\include\perfil.h
+	<iostream>
+
+1574864656 c:\users\alumno-e\downloads\proyecto-master\include\perfilgui.h
+	<iostream>
+
+1574869077 source:c:\users\alumno-e\downloads\proyecto-master\src\perfilgui.cpp
+	"PerfilGUI.h"
+	<cstdlib>
+	<iostream>
+	<fstream>
+

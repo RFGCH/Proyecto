@@ -3,6 +3,7 @@
 #include <iostream>
 #include <fstream>
 #include <MaquinasGUI.h>
+#include <PerfilGUI.h>
 
 using namespace std;
 
@@ -79,16 +80,9 @@ string IngresarGUI::Menu(string nick){
 void IngresarGUI::Maquinas(string nick){
     MaquinasGUI a(nick);
 }
+
 void IngresarGUI::Perfil(string nick){
-    cout << "CCC";
-    ifstream leer("Datos//users.txt");
-    string usuario=".";
-    while(nick != usuario){
-        getline(leer,usuario);
-        cout << "AAAA";
-    }
-    cout << "BBB";
-    leer.close();
+    PerfilGUI a(nick);
 }
 
 void IngresarGUI::Usuarios(){
