@@ -7,9 +7,10 @@
 using namespace std;
 
 //Variables Globales
-    static vector <Trabajador> a1;
-    static vector <Supervisor> a2;
-    static vector <Planner> a3;
+vector <Trabajador> a1;
+vector <Supervisor> a2;
+vector <Planner> a3;
+vector <maquinas> a4;
 
 void CargarArr();
 void OrdenarArr();
@@ -50,6 +51,16 @@ void CargarArr(){
         }
     }
     leer2.close();
+    ifstream leer5("Datos//maquinas");
+    while(!leer5.eof()){
+        string codigo,resumen,descripcion;
+        getline(leer5,codigo);
+        getline(leer5,resumen);
+        getline(leer5,descripcion);
+        Maquina d(codigo,resumen,descripcion);
+        a4.push_back(d);
+    }
+    leer5.close();
 }
 
 //Funcion de ordenamiento
@@ -76,6 +87,7 @@ void OrdenarArr(){
     quicksort(a1,a1.size()-1);
     quicksort(a2,a2.size()-1);
     quicksort(a3,a3.size()-1);
+    quicksort(a4,a4.size()-1);
 }
 
 /* Descarga los datos de los arreglos en el orden de, Planners, Supervisor y 
@@ -88,20 +100,20 @@ void DescargarArr(){
     int tamTra=a1.size();
     int tamSup=a2.size();
     int tamPla=a3.size();
-    while (tamPla--){
-        registrar << a3[tamPla].getnombre()+"\n";
+    for(int i = 0; i < tamPlan; i++){
+        registrar << a3[i].getnombre()+"\n";
         registrar << "Planner\n";
-        registrar << a3[tamPla].getpasswo()+"\n";
+        registrar << a3[i].getpasswo()+"\n";
     }
-    while (tamSup--){
-        registrar << a2[tamSup].getnombre()+"\n";
+    for(int i = 0; i < tamSup; i++){
+        registrar << a2[i].getnombre()+"\n";
         registrar << "Supervisor\n";
-        registrar << a2[tamSup].getpasswo()+"\n";
+        registrar << a2[i].getpasswo()+"\n";
     }
-    while (tamTra--){
-        registrar << a1[tamTra].getnombre()+"\n";
+    for(int i = 0; i < tamTra; i++){
+        registrar << a1[i].getnombre()+"\n";
         registrar << "Trabajador\n";
-        registrar << a1[tamTra].getpasswo()+"\n";
+        registrar << a1[i].getpasswo()+"\n";
     }
 
     leer.close();
