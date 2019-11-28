@@ -56,8 +56,6 @@ void GUI::registrarse(){
     if(valido){
     cout << "\n   Puesto: ";
     cin >> puesto;
-    if(puesto != "Trabajador" || "Supervisor" || "Planner"){valido = false;system("cls");cout << "\n  *** Rango invalido ***" << endl;}
-    if(valido){
     cout << "\n   Password: ";
     cin >> pass;
     leng = pass.length();
@@ -73,6 +71,7 @@ void GUI::registrarse(){
             cout << "\n  *** El nick ya esta registrado *** " << endl;
             return;
         }
+        if(registro != "")
         registrar<<registro + "\n";
     }
     registrar << nick+"\n";
@@ -83,7 +82,6 @@ void GUI::registrarse(){
     registrar.close();
     remove("Datos//users.txt");
     rename("Datos//codigofacilito.txt","Datos//users.txt");
-    }
     }
     }
     }
