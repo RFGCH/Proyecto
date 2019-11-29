@@ -18,9 +18,9 @@ class MaquinasGUI
         void Agregar();
 
     protected:
-        string nick;
 
     private:
+        string nick;
 };
 
 #endif // MAQUINASGUI_H

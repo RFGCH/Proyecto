@@ -10,7 +10,7 @@ using namespace std;
 vector <Trabajador> a1;
 vector <Supervisor> a2;
 vector <Planner> a3;
-vector <maquinas> a4;
+vector <Maquina> a4;
 
 void CargarArr();
 void OrdenarArr();
@@ -51,7 +51,7 @@ void CargarArr(){
         }
     }
     leer2.close();
-    ifstream leer5("Datos//maquinas");
+    ifstream leer5("Datos//maquinas.txt");
     while(!leer5.eof()){
         string codigo,resumen,descripcion;
         getline(leer5,codigo);
@@ -87,11 +87,11 @@ void OrdenarArr(){
     quicksort(a1,a1.size()-1);
     quicksort(a2,a2.size()-1);
     quicksort(a3,a3.size()-1);
-    quicksort(a4,a4.size()-1);
+    //quicksort(a4,a4.size()-1);
 }
 
-/* Descarga los datos de los arreglos en el orden de, Planners, Supervisor y 
-   Trabajadores */ 
+/* Descarga los datos de los arreglos en el orden de, Planners, Supervisor y
+   Trabajadores */
 
 
 void DescargarArr(){
@@ -100,7 +100,7 @@ void DescargarArr(){
     int tamTra=a1.size();
     int tamSup=a2.size();
     int tamPla=a3.size();
-    for(int i = 0; i < tamPlan; i++){
+    for(int i = 0; i < tamPla; i++){
         registrar << a3[i].getnombre()+"\n";
         registrar << "Planner\n";
         registrar << a3[i].getpasswo()+"\n";

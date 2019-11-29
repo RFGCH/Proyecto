@@ -188,3 +188,97 @@
 	<iostream>
 	<fstream>
 
+1574992111 source:c:\users\rubén felix\downloads\proyecto-master\main.cpp
+	<iostream>
+	<arr.h>
+	<GUI.h>
+	<fstream>
+	<vector>
+
+1574991605 c:\users\rubén felix\downloads\proyecto-master\include\arr.h
+	<iostream>
+	<Trabajador.h>
+	<Supervisor.h>
+	<Planner.h>
+	<Maquina.h>
+
+1574968025 c:\users\rubén felix\downloads\proyecto-master\include\trabajador.h
+	<Persona.h>
+	<iostream>
+
+1574968025 c:\users\rubén felix\downloads\proyecto-master\include\persona.h
+	<iostream>
+
+1574968025 c:\users\rubén felix\downloads\proyecto-master\include\supervisor.h
+	<iostream>
+	<Persona.h>
+
+1574968025 c:\users\rubén felix\downloads\proyecto-master\include\planner.h
+	<iostream>
+	<Persona.h>
+
+1574968025 c:\users\rubén felix\downloads\proyecto-master\include\gui.h
+	<iostream>
+
+1574968025 source:c:\users\rubén felix\downloads\proyecto-master\src\gui.cpp
+	"GUI.h"
+	<cstdlib>
+	<iostream>
+	<fstream>
+	<IngresarGUI.h>
+
+1574968025 c:\users\rubén felix\downloads\proyecto-master\include\ingresargui.h
+	<iostream>
+
+1574968025 source:c:\users\rubén felix\downloads\proyecto-master\src\ingresargui.cpp
+	"IngresarGUI.h"
+	<cstdlib>
+	<iostream>
+	<fstream>
+	<MaquinasGUI.h>
+	<PerfilGUI.h>
+
+1574991518 c:\users\rubén felix\downloads\proyecto-master\include\maquinasgui.h
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1574968025 c:\users\rubén felix\downloads\proyecto-master\include\perfilgui.h
+	<iostream>
+
+1574991883 source:c:\users\rubén felix\downloads\proyecto-master\src\maquina.cpp
+	"Maquina.h"
+	<iostream>
+
+1574991874 c:\users\rubén felix\downloads\proyecto-master\include\maquina.h
+	<iostream>
+
+1574991530 source:c:\users\rubén felix\downloads\proyecto-master\src\maquinasgui.cpp
+	"MaquinasGUI.h"
+	<cstdlib>
+	<iostream>
+	<fstream>
+
+1574968025 source:c:\users\rubén felix\downloads\proyecto-master\src\persona.cpp
+	"Persona.h"
+	<string>
+	<iostream>
+
+1574968025 source:c:\users\rubén felix\downloads\proyecto-master\src\planner.cpp
+	"Planner.h"
+	<iostream>
+
+1574968025 source:c:\users\rubén felix\downloads\proyecto-master\src\supervisor.cpp
+	"Supervisor.h"
+	<iostream>
+
+1574968025 source:c:\users\rubén felix\downloads\proyecto-master\src\trabajador.cpp
+	"Trabajador.h"
+	<iostream>
+
+1574990836 source:c:\users\rubén felix\downloads\proyecto-master\src\perfilgui.cpp
+	"PerfilGUI.h"
+	<cstdlib>
+	<iostream>
+	<fstream>
+

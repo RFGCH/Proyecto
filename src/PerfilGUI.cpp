@@ -107,5 +107,29 @@ void PerfilGUI::Mod(string nick){
     leer.close();
 }
 void PerfilGUI::Elm(string nick){
-
+    string opc;
+    cout << "\n ******  Eliminar  ******" << endl;
+    cout << "\n   1.- Estoy seguro de eliminarlo" << endl;
+    cout << "\n   2.- Salir" << endl;
+    cout << "\n   Ingrese su opcion: ";
+    cin >> opc;
+    if (opc == "1"){
+        string registro;
+        ofstream registrar3("Datos//codigofacilito.txt");
+        ifstream leer3("Datos//users.txt");
+        while (!leer3.eof()){
+            getline(leer3,registro);
+            if(registro==nick){
+                getline(leer3,registro);
+                getline(leer3,registro);
+                getline(leer3,registro);
+            }
+            if (registro != "")
+                registrar3<<registro + "\n";
+        }
+    remove("Datos//users.txt");
+    rename("Datos//codigofacilito.txt","Datos//users.txt");
+    leer3.close();
+    registrar3.close();
+    }
 }
