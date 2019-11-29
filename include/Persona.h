@@ -10,22 +10,14 @@ class Persona
 
         Persona(string,string);
         Persona(const Persona&);
-
-//Funciones get
-
         string getnombre();
         string getpasswo();
-
-/*Sobrecarga de operadores
-  para usar el ordenamiento de listas */
-
         bool operator < (Persona a);
         bool operator > (Persona a);
 
     protected:
 
         string nombre,password;
-        virtual void print();
 
     private:
 

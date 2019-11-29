@@ -4,11 +4,12 @@
 
 using namespace std;
 
+
+
 class IngresarGUI
 {
     public:
         IngresarGUI();
-
         string Menu(string);
 
         void Maquinas(string);

@@ -7,10 +7,9 @@
 using namespace std;
 
 //Variables Globales
-vector <Trabajador> a1;
-vector <Supervisor> a2;
-vector <Planner> a3;
-vector <Maquina> a4;
+    static vector <Trabajador> a1;
+    static vector <Supervisor> a2;
+    static vector <Planner> a3;
 
 void CargarArr();
 void OrdenarArr();
@@ -20,8 +19,8 @@ int main()
 {
     CargarArr();
     OrdenarArr();
-    GUI A;
     DescargarArr();
+    GUI A;
     return 0;
 }
 
@@ -51,16 +50,6 @@ void CargarArr(){
         }
     }
     leer2.close();
-    ifstream leer5("Datos//maquinas.txt");
-    while(!leer5.eof()){
-        string codigo,resumen,descripcion;
-        getline(leer5,codigo);
-        getline(leer5,resumen);
-        getline(leer5,descripcion);
-        Maquina d(codigo,resumen,descripcion);
-        a4.push_back(d);
-    }
-    leer5.close();
 }
 
 //Funcion de ordenamiento
@@ -82,35 +71,38 @@ void quicksort(vector<T>arr,int maxi,int mini = 0){
         quicksort(arr,maxi,p+1);
     }
 }
+template <class T>
+void burbuja(vector<T>arr,int t){
+
+    for(int i=1;i<t;i++)
+        for(int j=0;j<t-i;j++)
+            if(arr[j]<arr[j+1])
+                swap(arr[j],arr[j+1]);
+
+}
 
 void OrdenarArr(){
     quicksort(a1,a1.size()-1);
     quicksort(a2,a2.size()-1);
     quicksort(a3,a3.size()-1);
-    //quicksort(a4,a4.size()-1);
 }
-
-/* Descarga los datos de los arreglos en el orden de, Planners, Supervisor y
-   Trabajadores */
-
-
 void DescargarArr(){
     ifstream leer("Datos//users.txt");
     ofstream registrar("Datos//codigofacilito.txt");
     int tamTra=a1.size();
     int tamSup=a2.size();
     int tamPla=a3.size();
-    for(int i = 0; i < tamPla; i++){
+    for (int i = 0; i < tamPla; i++ ){
         registrar << a3[i].getnombre()+"\n";
         registrar << "Planner\n";
         registrar << a3[i].getpasswo()+"\n";
     }
-    for(int i = 0; i < tamSup; i++){
+    for (int i = 0; i < tamSup; i++ ){
         registrar << a2[i].getnombre()+"\n";
         registrar << "Supervisor\n";
         registrar << a2[i].getpasswo()+"\n";
     }
-    for(int i = 0; i < tamTra; i++){
+    for (int i = 0; i < tamTra; i++ ){
         registrar << a1[i].getnombre()+"\n";
         registrar << "Trabajador\n";
         registrar << a1[i].getpasswo()+"\n";

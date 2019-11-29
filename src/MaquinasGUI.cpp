@@ -9,7 +9,6 @@ MaquinasGUI::MaquinasGUI(string nick):
         nick(nick)
 {
     bool run = true;
-    system("cls");
     while(run){
         system("cls");
         string opc;
@@ -20,7 +19,6 @@ MaquinasGUI::MaquinasGUI(string nick):
         cout << "\n   4.-Salir" << endl;
         cout << "\n   Ingrese su opcion: ";
         cin >> opc;
-        system("cls");
         if(opc == "1")
             Vistarapida();
         else if(opc == "2")
@@ -28,6 +26,7 @@ MaquinasGUI::MaquinasGUI(string nick):
         else if(opc == "3")
             Agregar();
         else if(opc == "4"){
+            system("cls");
             run = false;
         }
         else
@@ -53,70 +52,6 @@ void MaquinasGUI::Vistarapida(){
     cin >> opc;
 }
 void MaquinasGUI::Buscar(){
-    ifstream leer("Datos//maquinas.txt");
-    if(leer.eof()){
-        cout << "\n  ***No hay maquinas que mostrar***" << endl;
-    }
-    string opc;
-    cout << "\n ------  Buscar  ------" << endl;
-    cout << "\n   1.-Codigo" << endl;
-    cout << "\n   2.-Salir" << endl;
-    cout << "\n   Ingrese el opcion: ";
-    cin >> opc;
-    if(opc == "2"){leer.close();system("cls");}
-    if(opc == "1"){
-    cout << "\n   Ingrese el codigo: ";
-    string codigo,resumen,registro;
-    cin >> codigo;
-    while(!leer.eof()){
-        getline(leer,registro);
-        if(codigo == registro){
-            system("cls");
-            cout << "\n ---- " << codigo << " ---   \n"<< endl;
-            getline(leer,resumen);
-            cout << " " << resumen << "...\n" << endl;
-        }
-    }
-    cout << "\n Ingrese cualquier tecla... ";
-    string opc;
-    cin >> opc;
-    leer.close();
-    system("cls");
-    }
-    else{system("cls");cout << "\n  ***Valor no valido***" << endl;}
 }
 void MaquinasGUI::Agregar(){
-    system("cls");
-    bool valido = true;
-    ofstream registrar("Datos//codigofacilito.txt");
-    ifstream leer("Datos//maquinas.txt");
-    if(!leer){valido = false;system("cls");cout << "\n  *** No se a podido acceder a el archivo users ***" << endl;}
-    if (valido){
-    string codigo,resumen,registro;
-    cout << "\n ------  Agregar  -----" << endl;
-    cout << "\n   Codigo: ";
-    cin >> codigo;
-    cout << "\n   Resumen: ";
-    cin >> resumen;
-    while (!leer.eof()){
-        getline(leer,registro);
-        if(registro==codigo){
-            leer.close();
-            registrar.close();
-            remove("Datos//codigofacilito.txt");
-            system("cls");
-            cout << "\n  *** El codigo ya esta registrado *** " << endl;
-            return;
-        }
-        if(registro != "")
-        registrar<<registro + "\n";
-    }
-    registrar << codigo+"\n";
-    registrar << resumen+"\n";
-    system("cls");
-    leer.close();
-    registrar.close();
-    remove("Datos//users.txt");
-    rename("Datos//codigofacilito.txt","Datos//users.txt");
-    }
 }

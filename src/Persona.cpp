@@ -17,11 +17,8 @@ string Persona :: getpasswo(){
     return password;
 }
 bool Persona::operator <(Persona a){
-    return nombre.compare(a.nombre);
+    return nombre < a.nombre;
 }
 bool Persona::operator >(Persona a){
-    return (!nombre.compare(a.nombre));
-}
-void Persona :: print(){
-    cout << "Nombre: "  << nombre << endl;
+    return nombre > a.nombre;
 }
