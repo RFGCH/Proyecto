@@ -11,6 +11,8 @@ class GUI
         ~GUI();
     protected:
 
+//Funciones del menu
+
         void ingresar();
         void registrarse();
         void opciones();

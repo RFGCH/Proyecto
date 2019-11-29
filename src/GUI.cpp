@@ -53,6 +53,7 @@ void GUI::registrarse(){
     cin >> nick;
     int leng = nick.length();
     if(leng > 8 || leng < 3){valido = false;system("cls");cout << "\n  *** Nick de entre 3 a 8 de longitud ***" << endl;}
+    if(valido){
     cout << "\n   Puesto: ";
     cin >> puesto;
     cout << "\n   Password: ";
@@ -70,7 +71,7 @@ void GUI::registrarse(){
             cout << "\n  *** El nick ya esta registrado *** " << endl;
             return;
         }
-        if(registro!="")
+        if(registro != "")
         registrar<<registro + "\n";
     }
     registrar << nick+"\n";
@@ -81,6 +82,7 @@ void GUI::registrarse(){
     registrar.close();
     remove("Datos//users.txt");
     rename("Datos//codigofacilito.txt","Datos//users.txt");
+    }
     }
     }
 }

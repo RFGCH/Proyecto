@@ -35,6 +35,10 @@ Pruebas
   Las Templates dieron muchas fallas, la clase arr tenia como objetivo contener a un conjunto de punteros que apuntaran a los objetos de tipo Trabajador, Supervisor y Planner. Se cree que el error se debe a una mala colocación del archivo .h o el archivo .cpp de la clase, es poco probable que el problema sea la definicion de la misma. La definicion de una template que use vectores tambio dio problema por el como se define el argumento vector.
   El ordenamiento de las tres listas (vectores) de tipo Trabajador, Supervisor y Planner usando templates fue exitoso, el problema es que no lo hace desde el comienzo, o ordena de manera errada, en las pruebas se intento cambiando el metodo de ordenamiento (de quicksort a burbuja) pero los resultados fueron los mismos, no se tiene una hipotesis clara de lo que podria estar generando dicho error, se tiene que seguir estudiando e investigando dicho punto.
   El motivo por el cual una gran cantidad de secciones aun no an podido ser terminadas es por la falta de experiencia en el area, la falta de realismo a la hora de tomar la decision de extender la aplicación y la falta de conocimientos en el area.
+  
+  
+
+Resultados
 
 
 

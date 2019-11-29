@@ -4,6 +4,7 @@
 #include <Trabajador.h>
 #include <Supervisor.h>
 #include <Planner.h>
+#include <Maquina.h>
 
 using namespace std;
 template<class T>
