@@ -8,15 +8,17 @@ int main()
 
     int inicio = 5;
     int bisciesto = 4;
-    int año = 2020;
+    int aÃ±o = 2020;
     int mes;
 
-    calendario(int año, int mes){
-        this -> año = init(año);
+    calendario(int aÃ±o, int mes){
+        this -> aÃ±o = init(aÃ±o);
         this -> mes = mes;
     }
-
-    int bis(int bisciesto, int inicio){
+    int init(int a){
+        return a;
+    }
+    int bis(){
         if (bisciesto = 4){
             inicio+=1;
             bisciesto-=4;
